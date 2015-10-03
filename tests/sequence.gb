@@ -1,0 +1,70 @@
+LOCUS       NC_013503                423 bp    DNA     linear   CON 17-DEC-2014
+DEFINITION  Escherichia coli plasmid pMAS2027, complete sequence.
+ACCESSION   NC_013503 REGION: 2089..2511
+VERSION     NC_013503.1  GI:268318460
+DBLINK      BioProject: PRJNA178640
+KEYWORDS    RefSeq.
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales;
+            Enterobacteriaceae; Escherichia.
+REFERENCE   1  (bases 1 to 423)
+  AUTHORS   Ong,C.L., Beatson,S.A., McEwan,A.G. and Schembri,M.A.
+  TITLE     Conjugative plasmid transfer and adhesion dynamics in an
+            Escherichia coli biofilm
+  JOURNAL   Appl. Environ. Microbiol. 75 (21), 6783-6791 (2009)
+   PUBMED   19717626
+REFERENCE   2  (bases 1 to 423)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-NOV-2009) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (bases 1 to 423)
+  AUTHORS   Ong,C.-L.Y., Beatson,S.A., McEwan,A.G. and Schembri,M.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-JAN-2009) School of Chemistry and Molecular
+            Biosciences, The University of Queensland, Building 76, Cooper
+            Road, Brisbane, St Lucia, QLD 4072, Australia
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to FJ666132.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..423
+                     /organism="Escherichia coli"
+                     /mol_type="genomic DNA"
+                     /strain="MS2027"
+                     /isolation_source="urine of catheter-associated urinary
+                     tract infection patient"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:562"
+                     /plasmid="pMAS2027"
+                     /country="Australia: Princess Alexandra Hospital,
+                     Brisbane"
+     gene            1..423
+                     /gene="ddp3"
+                     /locus_tag="pMAS2027_4"
+                     /db_xref="GeneID:8569592"
+     CDS             1..423
+                     /gene="ddp3"
+                     /locus_tag="pMAS2027_4"
+                     /note="similar to Escherichia coli plasmid R6K"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="DNA distortion polypeptide 3"
+                     /protein_id="YP_003292164.1"
+                     /db_xref="GI:268318464"
+                     /db_xref="GeneID:8569592"
+                     /translation="MTSLTPFRNVCPMTYSRFLLESFMKYLVKEFINEKYTKAVNILK
+                     DNLKEHYHVFYCVRLSEILFPASEYGTEQFFSDFEKINSISLPVLVFDLKEGVPVIVI
+                     SLDDVSYCDVLDEMDIDFMKCDSLSELLTSDKLENLLV"
+ORIGIN      
+        1 atgacgtctc tgacgccatt ccgcaacgtt tgcccgatga cctacagtcg gttcttgttg
+       61 gagagtttta tgaaatattt ggtcaaagag tttattaacg aaaaatatac taaggctgtt
+      121 aatattttaa aggataacct taaagaacac tatcatgttt tttattgtgt gagattaagt
+      181 gagattcttt ttcctgccag tgaatatgga actgaacagt tttttagtga ttttgaaaag
+      241 ataaactcca tttcattacc tgtcttagtg tttgatctca aagagggtgt tcctgtgatt
+      301 gtcattagtc ttgatgatgt cagctactgt gatgttctgg acgaaatgga tattgatttt
+      361 atgaaatgtg attcgctgtc agaattgctt accagcgata agctggaaaa tttattagta
+      421 tga
+//
+
