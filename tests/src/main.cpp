@@ -4,6 +4,7 @@
  */
 
 #include <cstdlib>
+#include <cstring>
 #include <iostream>
 #include "SequenceReaderChooser.h"
 #include "SequenceReader.h"
@@ -21,7 +22,7 @@ int main(int argc, char *argv[]) {
    SequenceInfo *seqInfo;
    SequenceReader *reader;
    const char *fileName = argv[1];
-   const char *ext = strchr(fileName, '.');
+   const char *ext = std::strchr(fileName, '.');
    if (ext == nullptr) {
       std::cout << "Unknown file extension" << std::endl;
       std::exit(EXIT_FAILURE);
@@ -34,13 +35,13 @@ int main(int argc, char *argv[]) {
       std::exit(EXIT_FAILURE);
    }
    
-   seqInfo = reader.readSequence(fileName);
+   seqInfo = reader->readSequence(fileName);
    if (seqInfo == nullptr) {
       std::cout << "Error while reading sequence file" << std::endl;
       std::exit(EXIT_FAILURE);
    }
    
-   cout << "Format: " << seqInfo->getFormatName() << std::endl
+   std::cout << "Format: " << seqInfo->getFormatName() << std::endl
         << "Sequence data: " << seqInfo->getSequenceData() << std::endl;
    
    return EXIT_SUCCESS;
