@@ -7,6 +7,8 @@
 #ifndef FASTA_READER_H_INCLUDED
 #define FASTA_READER_H_INCLUDED
 
+#include "SequenceReader.h"
+
 class FastaReader : public SequenceReader {
    SequenceInfo *readSequence(const char *fileName) override;
    bool supportsExtention(const char *ext) override;
