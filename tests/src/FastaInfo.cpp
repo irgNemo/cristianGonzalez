@@ -12,21 +12,21 @@ FastaInfo::FastaInfo(const std::string &description,
 }
 
 void  FastaInfo::setSequenceData(const std::string &sequenceData) {
-   this->sequenceData = SequenceData;
+   this->sequenceData = sequenceData;
 }
 
-void  setDescription(const string &description) {
+void  FastaInfo::setDescription(const std::string &description) {
    this->description = description;
 }
 
-const std::string &getSequenceData() const {
-   return sequenceDatata;
+const std::string &FastaInfo::getSequenceData() const {
+   return sequenceData;
 }
 
-const std::string &getDescription()  const {
+const std::string &FastaInfo::getDescription()  const {
    return description;
 }
 
-const std::string &getFormatName() const {
+const std::string &FastaInfo::getFormatName() const {
    return "Fasta";
 }
