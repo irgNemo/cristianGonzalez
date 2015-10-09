@@ -14,6 +14,7 @@ class SequenceReaderChooser {
  public:
    SequenceReaderChooser(std::initializer_list<SequenceReader*> readers);
    SequenceReaderChooser() = default;
+   ~SequenceReaderChooser();
    SequenceReader *findCorrectReader(const char *fileExt);
    void addReader(SequenceReader *reader);
  private:

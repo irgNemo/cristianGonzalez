@@ -13,6 +13,11 @@ SequenceReaderChooser::SequenceReaderChooser(
  : readers(readerList) {
 }
 
+SequenceReaderChooser::~SequenceReaderChooser() {
+   for (auto reader: readers)
+      delete reader;
+}
+
 SequenceReader *SequenceReaderChooser::findCorrectReader(const char *fileExt) {
    SequenceReader *correct = nullptr;
    for (auto reader : readers)
