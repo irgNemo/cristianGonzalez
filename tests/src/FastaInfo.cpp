@@ -2,7 +2,7 @@
  * Author: Cristian David Gonzalez Gonzalez.
  */
  
-#include "FastaInfo"
+#include "FastaInfo.h"
 #include <string>
 
 FastaInfo::FastaInfo(const std::string &description,
