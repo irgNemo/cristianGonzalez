@@ -8,6 +8,7 @@
 #include <string>
 
 class SequenceInfo {
+ public:
    virtual ~SequenceInfo();
    virtual void setSequenceData(const std::string &sequenceData) = 0;
    virtual const std::string &getSequenceData() const = 0;
