@@ -5,7 +5,7 @@
 #include "FastaReader.h"
 #include <cstring>
 #include <iostream>
-#include <ifstream>
+#include <fstream>
 #include <sstream>
 #include "FastaInfo.h"
 
