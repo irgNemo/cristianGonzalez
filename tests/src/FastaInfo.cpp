@@ -5,6 +5,8 @@
 #include "FastaInfo.h"
 #include <string>
 
+static std::string formatName = "Fasta";
+
 FastaInfo::FastaInfo(const std::string &description,
                      const std::string &sequenceData)
  : description(description),
@@ -28,5 +30,5 @@ const std::string &FastaInfo::getDescription()  const {
 }
 
 const std::string &FastaInfo::getFormatName() const {
-   return "Fasta";
+   return formatName;
 }

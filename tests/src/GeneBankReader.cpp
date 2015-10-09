@@ -11,5 +11,5 @@ SequenceInfo *GeneBankReader::readSequence(const char *fileName) {
 }
 
 bool GeneBankReader::supportsExtention(const char *ext) {
-   return strchr("gb", ext) == 0;
+   return strcmp("gb", ext) == 0;
 }

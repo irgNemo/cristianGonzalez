@@ -4,6 +4,9 @@
  */
 
 #include "GeneBankInfo.h"
+#include <string>
+
+static std::string formatName = "GeneBank";
 
 void  GeneBankInfo::setSequenceData(const std::string &sequenceData) {
    origin = sequenceData; // TODO averiguar si ORIGIN es siempre lo mismo que sequence data
@@ -14,5 +17,5 @@ const std::string &GeneBankInfo::getSequenceData() const {
 }
 
 const std::string &GeneBankInfo::getFormatName() const {
-   return "GeneBank";
+   return formatName;
 }
