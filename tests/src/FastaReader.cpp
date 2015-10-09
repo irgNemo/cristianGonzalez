@@ -11,19 +11,18 @@
 
 SequenceInfo *FastaReader::readSequence(const char *fileName) {
    std::ifstream file(fileName);
-   if (in.is_open()) {
+   if (file.is_open()) {
       std::string line;
       std::string description;
-      std::iostringstream sequenceData;
+      std::ostringstream sequenceData;
       file.get(); // ignore '>'
       std::getline(file, description);
       while (!std::getline(file, line).eof() && !line.empty()) {
          sequenceData << line;
       }
       return new FastaInfo(description, sequenceData.str());
-   } else {
-      return nullptr;
    }
+   return nullptr;
 }
 
 bool FastaReader::supportsExtention(const char *ext) {
