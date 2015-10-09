@@ -13,7 +13,7 @@ class FastaInfo : public SequenceInfo {
    FastaInfo(const std::string &description, const std::string &sequenceData);
    FastaInfo() = default;
    void  setSequenceData(const std::string &sequenceData) override;
-   void  setDescription(const string &description);
+   void  setDescription(const std::string &description);
    const std::string &getSequenceData() const override;
    const std::string &getDescription()  const;
    const std::string &getFormatName()   const override;
