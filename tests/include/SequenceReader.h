@@ -6,6 +6,8 @@
  
 #ifndef SEQUENCE_READER_H_INCLUDED
 #define SEQUENCE_READER_H_INCLUDED
+
+#include "SequenceInfo.h"
  
 class SequenceReader {
  public:
