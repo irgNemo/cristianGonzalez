@@ -11,7 +11,7 @@
  
 class SequenceReader {
  public:
-   virtual ~SequenceReader() = 0;
+   virtual ~SequenceReader() = default;
    virtual SequenceInfo *readSequence(const char *fileName) = 0;
    virtual bool supportsExtention(const char *ext) = 0;
 };

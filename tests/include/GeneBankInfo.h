@@ -20,6 +20,7 @@ class GeneBankInfo : public SequenceInfo {
       std::string journal;
       std::string pubmed;
    };
+   ~GeneBankInfo() = default;
    void  setSequenceData(const std::string &sequenceData) override;
    const std::string &getSequenceData() const override;
    const std::string &getFormatName()   const override;

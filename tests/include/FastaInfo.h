@@ -11,7 +11,8 @@
 class FastaInfo : public SequenceInfo {
  public:
    FastaInfo(const std::string &description, const std::string &sequenceData);
-   FastaInfo() = default;
+   FastaInfo()  = default;
+   ~FastaInfo() = default;
    void  setSequenceData(const std::string &sequenceData) override;
    void  setDescription(const std::string &description);
    const std::string &getSequenceData() const override;

@@ -11,6 +11,7 @@
 #include "SequenceInfo.h"
 
 class GeneBankReader : public SequenceReader {
+   ~GeneBankReader() = default;
    SequenceInfo *readSequence(const char *fileName) override;
    bool supportsExtention(const char *ext) override;
 };

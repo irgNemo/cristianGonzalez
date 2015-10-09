@@ -10,6 +10,7 @@
 #include "SequenceReader.h"
 
 class FastaReader : public SequenceReader {
+   ~FastaReader() = default;
    SequenceInfo *readSequence(const char *fileName) override;
    bool supportsExtention(const char *ext) override;
 };
