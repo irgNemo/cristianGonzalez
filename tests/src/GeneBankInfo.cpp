@@ -19,8 +19,10 @@ bool GeneBankInfo::setLocusField(const std::string &field,
    auto iter = locus.find(field);
    if (iter != locus.end()) {
       iter->second = value;
+      return true;
+   } else {
+      return false;
    }
-   return false;
 }
 
 void GeneBankInfo::setDefinition(const std::string &definition) {
@@ -55,8 +57,24 @@ bool GeneBankInfo::deleteReference(unsigned idx) {
    if (idx < references.size()) {
       references.erase(references.begin() + idx);
       return true;
+   } else {
+      return false;
    }
-   return false;
+}
+
+bool GeneBankInfo::setFeaturesField(const std::string &field,
+                                    const std::string &value) {
+   auto iter = features.find(field);
+   if (iter != features.end()) {
+      iter->second = value;
+      return true;
+   } else {
+      return false;
+   }
+}
+
+void GeneBankInfo::setOrigin(const std::string &origin) {
+   this->origin;
 }
 
 const std::string &GeneBankInfo::getSequenceData() const {
