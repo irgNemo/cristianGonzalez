@@ -30,7 +30,7 @@ class GeneBankInfo : public SequenceInfo {
    void setSource(const std::string &source);
    void setOrganism(const std::string &organism);
    void addReference(Reference &reference);
-   bool deleteReference(int idx);
+   bool deleteReference(unsigned idx);
    bool setFeaturesField(const std::string &field, const std::string &value);
    void setOrigin(const std::string &origin);
    const std::string &getSequenceData() const override;
@@ -42,8 +42,8 @@ class GeneBankInfo : public SequenceInfo {
    const std::string &getSource() const;
    const std::string &getOrganism() const;
    const std::string &getFormatName() const override;
-   int getReferencesSize() const;
-   const Reference &getReference(int idx) const;
+   unsigned getReferencesSize() const;
+   const Reference &getReference(unsigned idx) const;
    const std::string &getFeature(const std::string &feature) const;
    const std::string &getOrigin();
  private:
