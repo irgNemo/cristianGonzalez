@@ -84,3 +84,47 @@ const std::string &GeneBankInfo::getSequenceData() const {
 const std::string &GeneBankInfo::getFormatName() const {
    return formatName;
 }
+
+const std::string &GeneBankInfo::getLocusField(const std::string &field) const {
+   return locus[field];
+}
+
+const std::string &GeneBankInfo::getDefinition() const {
+   return definition;
+}
+
+const std::string &GeneBankInfo::getAccession() const {
+   return accession;
+}
+
+const std::string &GeneBankInfo::getVersion() const {
+   return version;
+}
+
+const std::string &GeneBankInfo::getKeywords() const {
+   return keywords;
+}
+
+const std::string &GeneBankInfo::getSource() const {
+   return source;
+}
+
+const std::string &GeneBankInfo::getOrganism() const {
+   return organism;
+}
+
+unsigned GeneBankInfo::getReferencesSize() const {
+   return references.size();
+}
+
+const Reference &GeneBankInfo::getReference(unsigned idx) const {
+   return references[idx];
+}
+
+const std::string &GeneBankInfo::getFeature(const std::string &feature) const {
+   return features[feature];
+}
+
+const std::string &GeneBankInfo::getOrigin() {
+   return origin;
+}
