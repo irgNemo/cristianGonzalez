@@ -74,7 +74,7 @@ bool GeneBankInfo::setFeaturesField(const std::string &field,
 }
 
 void GeneBankInfo::setOrigin(const std::string &origin) {
-   this->origin;
+   this->origin = origin;
 }
 
 const std::string &GeneBankInfo::getSequenceData() const {
@@ -86,7 +86,7 @@ const std::string &GeneBankInfo::getFormatName() const {
 }
 
 const std::string &GeneBankInfo::getLocusField(const std::string &field) const {
-   return locus[field];
+   return locus.find(field)->second;
 }
 
 const std::string &GeneBankInfo::getDefinition() const {
@@ -117,12 +117,12 @@ unsigned GeneBankInfo::getReferencesSize() const {
    return references.size();
 }
 
-const Reference &GeneBankInfo::getReference(unsigned idx) const {
+const GeneBankInfo::Reference &GeneBankInfo::getReference(unsigned idx) const {
    return references[idx];
 }
 
 const std::string &GeneBankInfo::getFeature(const std::string &feature) const {
-   return features[feature];
+   return features.find(feature)->second;
 }
 
 const std::string &GeneBankInfo::getOrigin() {
